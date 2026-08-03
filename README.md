@@ -1,6 +1,6 @@
 # Bazzite iMac A1419 (Late 2015) — Post-Install Guide
 
-<img src="image.png" alt="iMac A1419" width="400">
+<p align="center"><img src="image.png" alt="iMac A1419" width="400"></p>
 
 > **TL;DR:** I bought a 2015 iMac at a thrift store, upgraded it, and installed Bazzite 44 for retro gaming. This repo has the post-install config I wrote to fix boot hangs, GPU black screens, CPU throttling, and Bluetooth. Run `postinstall.sh` after a fresh Bazzite install, then `verify.sh` to confirm everything stuck.
 >
