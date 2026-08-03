@@ -27,9 +27,9 @@ This repo is my documented, scripted post-install. Every optimization was tested
 | **Display** | 27" 5120×2880 internal (eDP) |
 | **WiFi** | Broadcom BCM43602 (802.11ac) |
 | **Bluetooth** | Broadcom BCM20703A1 (USB 05ac:8294) |
-|| **Audio** | Realtek ALC887 (internal speakers + headphone jack) |
-|| **Webcam** | Apple FaceTime HD Camera (05ac:8511, USB 2.0, UVC) |
-|| **SD Card** | Broadcom BCM57785 SDXC/MMC Card Reader (PCIe) |
+| **Audio** | Realtek ALC887 (internal speakers + headphone jack) |
+| **Webcam** | Apple FaceTime HD Camera (05ac:8511, USB 2.0, UVC) |
+| **SD Card** | Broadcom BCM57785 SDXC/MMC Card Reader (PCIe) |
 
 ## Display Note
 
