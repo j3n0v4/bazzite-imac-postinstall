@@ -1,0 +1,12 @@
+[Unit]
+Description=iMac A1419 firmware setup (WiFi NVRAM, BT HCD)
+After=local-fs.target
+Before=bluetooth.service network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/imac-firmware-setup.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+#!/bin/sh
+case "$1" in
+    suspend|hibernate)
+        echo "0000:01:00.0" > /sys/bus/pci/drivers/amdgpu/unbind 2>/dev/null || true
+        sleep 2
+        echo "0000:01:00.0" > /sys/bus/pci/drivers/amdgpu/unbind 2>/dev/null || true
+        ;;
+    resume|thaw)
+        sleep 2
+        echo "0000:01:00.0" > /sys/bus/pci/drivers/amdgpu/bind 2>/dev/null || true
+        sleep 2
+        echo "0000:01:00.0" > /sys/bus/pci/drivers/amdgpu/bind 2>/dev/null || true
+        ;;
+esac

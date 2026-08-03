@@ -1,0 +1,14 @@
+[Unit]
+Description=Fix headphone audio on iMac A1419 (unmute, auto-mute, pin D0)
+After=sound.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c 'amixer -c 0 cset name="Auto-Mute Mode" Disabled 2>/dev/null || true'
+ExecStart=/bin/sh -c 'amixer -c 0 cset name="Headphone Playback Switch" on 2>/dev/null || true'
+ExecStart=/bin/sh -c 'amixer -c 0 cset name="Pin D0" on 2>/dev/null || true'
+ExecStart=/bin/sh -c 'amixer -c 0 cset name="Headphone" on 2>/dev/null || true'
+
+[Install]
+WantedBy=multi-user.target

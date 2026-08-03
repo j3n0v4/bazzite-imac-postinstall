@@ -1,0 +1,72 @@
+# Broadcom BCM43602 NVRAM config for iMac A1419 (Late 2015)
+# Source: community-tested config with sup_wpa=0
+#
+# sup_wpa=0 disables WPA supplicant firmware offload
+# which is not supported by the fullmac driver on this chipset.
+#
+# Board parameters:
+# - 2.4GHz + 5GHz dual-band
+# - 2 antenna chains (1TX + 1RX per band)
+# - Country code: X2 (worldwide)
+#
+sromcc=0x1A
+boardtype=0x0736
+boardrev=0x1100
+boardflags=0x00400001
+boardflags2=0x00000001
+boardflags3=0x00000001
+macaddr=00:00:00:00:00:00
+ccode=X2
+regrev=0
+antswitch=0
+pdgain5g=3
+pdgain2g=3
+maxp2ga0=0x4E
+maxp5ga0=0x4E
+pa2ga0=-168,6418,-777
+pa5ga0=-168,6418,-777
+pa5ga1=-168,6418,-777
+pa5ga2=-168,6418,-777
+rssismf2g=0xa
+rssismc2g=0x3
+rssisav2g=0x7
+rssismf5g=0xe
+rssismc5g=0x3
+rssisav5g=0x7
+rxchain=3
+txchain=3
+aa2g=3
+aa5g=3
+agbg0=2
+agbg1=2
+agbg2=2
+agbg3=2
+agbg4=2
+agbg5=2
+agbg6=2
+agbg7=2
+agbg8=2
+agbg9=2
+agbg10=2
+agbg11=2
+agbg12=2
+agbg13=2
+agbg14=2
+agbg15=2
+aga0=2
+aga1=2
+aga2=2
+aga3=2
+aga4=2
+aga5=2
+aga6=2
+aga7=2
+aga8=2
+aga9=2
+aga10=2
+aga11=2
+aga12=2
+aga13=2
+aga14=2
+aga15=2
+sup_wpa=0
